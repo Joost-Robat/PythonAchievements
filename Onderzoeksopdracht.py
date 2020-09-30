@@ -67,7 +67,7 @@ if q1 == "1":
 	time.sleep(3)
 	write("Nothing happend...", 0.1)
 	time.sleep(1)
-	write("Alright to be honest I don't know what i was expe-", 0.04)
+	write("Alright to be honest I don't know what I was expe-", 0.04)
 	write("BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM!!!!!", 0.01)
 	write("The explosive flings you across the room against the wall leaving you injured with heavy bleeding wounds...", 0.08)
 	time.sleep(2)
@@ -87,12 +87,34 @@ if q1 == "1":
 			continue
 if q1 == "2":
 	clear()
-	time.sleep(1)
+	time.sleep(1.5)
 	write("You grab one of the bottles with your feet but drop it while carrying...", 0.06)
 	time.sleep(1.5)
-	write("The bottles left shards of sharp glass on the floor, while you try to pick one up and succeed your foot gets cut...", 0.06)
+	write("The bottles left shards of sharp glass on the floor, while you try to pick one up and succeed your foot gets cut...", 0.08)
 	time.sleep(1.5)
-	write("You throw
+	write("You throw The shard of glass on your lap and from there onto the side of the chair where you manage to grab it with your hand...", 0.08)
+	time.sleep(2)
+	write("You manage to cut the rope around your hands...", 0.08)
+	time.sleep(0.5)
+	write("You slowly cut the rope aroud your legs and freely move them...", 0.08)
+	time.sleep(1)
+	clear()
+	time.sleep(0.5)
+	write("You walk towards the door in the room wondering what's on the other side...", 0.08)
+	time.sleep(1)
+	write("You slowly open the door...", 0.06)
+	time.sleep(0.5)
+	write("You find yourself at a set of stairs wich follow to a door...", 0.06)
+	time.sleep(1)
+	clear()
+	time.sleep(0.5)
+	write("You are greeted by the birght and warming smile of the sun...", 0.06)
+	time.sleep(2)
+	write("You've never felt happier being greeted by the sun in this hot forsaken country...", 0.06)
+	time.sleep(2)
+	
+
+	
 
 
 
