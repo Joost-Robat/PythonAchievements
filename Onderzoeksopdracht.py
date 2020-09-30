@@ -77,10 +77,10 @@ if q1 == "1":
 	loop1 = True
 	while loop1:
 		q2 = input("Restart? Yes/No\n")
-		if q2 == "Yes" or "yes":
+		if q2 == "Yes" or q2 == "yes":
 			check1 = True
 			continue
-		if q2 == "No" or "no":
+		if q2 == "No" or q2 == "no":
 			pass
 		else:
 			write("That's not a valid response you potato!", 0.06)
@@ -92,7 +92,7 @@ if q1 == "2":
 	time.sleep(1.5)
 	write("The bottles left shards of sharp glass on the floor, while you try to pick one up and succeed your foot gets cut...", 0.06)
 	time.sleep(1.5)
-
+	write("You throw
 
 
 
