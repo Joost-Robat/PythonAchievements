@@ -4,16 +4,29 @@ import sys
 import os
 clear = lambda: os.system('cls')
 clear()
+from pygame._sdl2 import *
+from pygame import mixer
+
+mixer.init(devicename='Oortelefoon van hoofdtelefoon (HyperX Virtual Surround Sound)') #run de audio.py in cmd voor uw huidige audiodevice
+
+def play(mp3, volume):
+	sound = mixer.Sound(mp3)
+	sound.play()
+	sound.set_volume(volume)
 
 def write(text, speed):
 	for x in text:
 		print(x, end='')
 		sys.stdout.flush()
+		sound = mixer.Sound("blop.mp3")
+		sound.play()
+		sound.set_volume(1)
 		sleep(speed)
 	print("\n")
 
 check1 = True
 while check1:
+	play("1.mp3", 0.5)
 	write("You're in a land with no name...", 0.06)
 	time.sleep(2.5)
 	write("Who am I?", 0.1)
