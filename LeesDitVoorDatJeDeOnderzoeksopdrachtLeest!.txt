@@ -11,3 +11,4 @@ python -m pip install pygame
 pip install pygame==2.0.0.dev8
 
 Negeer de waarschuwingen deze versie is goed.
+Download de audio.py en run deze in de cmd, kopieer deze en plak hem in de Onderzoeksopdracht.py tussen de haakjes er staat daar een comment bij van welke je moet hebben.
