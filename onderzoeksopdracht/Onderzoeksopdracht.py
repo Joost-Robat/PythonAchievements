@@ -7,7 +7,7 @@ clear()
 from pygame._sdl2 import *
 from pygame import mixer
 
-mixer.init(devicename='Oortelefoon van hoofdtelefoon (HyperX Virtual Surround Sound)') #run de audio.py in cmd voor uw huidige audiodevice
+mixer.init(devicename='Luidsprekers (Realtek(R) Audio)') #run de audio.py in cmd voor uw huidige audiodevice
 
 def play(mp3, volume):
 	sound = mixer.Sound(mp3)
@@ -136,7 +136,7 @@ if q1 == "2":
 	time.sleep(2)
 	
 if q1 == "3":
-	clear
+	clear()
 	time.sleep(1.5)
 	write("As you desperatly try to wringle your hands out of the rope wich tie them together you hurt yourself...", 0.06)
 	time.sleep(1.5)
@@ -144,7 +144,7 @@ if q1 == "3":
 	time.sleep(1)
 	write("As your frustration grows, so does your agression... You start flicking your arms around wich produces quite some noise...", 0.08)
 	time.sleep(1)
-	write("You free yourself from the rope and untie the rope around your legs and stand up admire the room you're in...", 0.06)
+	write("You free yourself from the rope and untie the rope around your legs and stand up to admire the room you're in...", 0.06)
 	time.sleep(1)
 	write("You walk to a set of stairs wich you spot, but as you walk there you hear people shouting some stuff in a weird language...", 0.06)
 	time.sleep(2)
@@ -155,14 +155,17 @@ if q1 == "3":
 	write("You hear the rattling of the keys...", 0.06)
 	play("keys.mp3", 0.3)
 	time.sleep(1)
-	write("This is bad I need to hide..." 0.06)
+	write("This is bad I need to hide...", 0.06)
 	time.sleep(0.5)
 	write("You crawl under a desk desperate for a good hiding spot and desperate that he won't spot you...", 0.06)
 	time.sleep(0.5)
 	play("footsteps.mp3", 0.3)
 	time.sleep(3)
 	write("As you hear him walking down the stairs you just faced your heartbeat begins to speed up...", 0.06)
-	
+	play("heartbeat.mp3", 0.4)
+	play("gun_cocking.mp3", 0.4)
+	time.sleep(1.5)
+	write("If he finds you now its game over and you know it...", 0.06)
 
 
 
