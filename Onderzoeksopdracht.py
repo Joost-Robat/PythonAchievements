@@ -113,8 +113,17 @@ if q1 == "2":
 	write("You've never felt happier being greeted by the sun in this hot forsaken country...", 0.06)
 	time.sleep(2)
 	
-
-	
+if q1 == "3":
+	clear
+	time.sleep(1.5)
+	write("As you desperatly try to wringle your hands out of the rope wich tie them together you hurt yourself...", 0.06)
+	time.sleep(1.5)
+	write("You have been angered by the frustration of trying to free yourself of this rope...", 0.06)
+	time.sleep(1)
+	write("As your frustration grows, so does your agression... You start flicking your arms around wich produces quite some noise...", 0.08)
+	time.sleep(1)
+	write("You free yourself from the rope and untie the rope around your legs and stand up admire the room you're in...", 0.06)
+	time.sleep(1)
 
 
 
