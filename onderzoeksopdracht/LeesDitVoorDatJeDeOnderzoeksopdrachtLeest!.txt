@@ -1,0 +1,14 @@
+Download de onderzoeksopdracht en run hem in de cmd voor de volle ervaring.
+Ik heb er veel moeite in gestopt en het script doet het goed en ziet er het leukst uit
+als u hem runt in de cmd.
+
+
+Installeer de pygame module voor de volle ervaring (Met sound effects!).
+copy en paste dit in de cmd:
+
+python -m pip install pygame
+
+pip install pygame==2.0.0.dev8
+
+Negeer de waarschuwingen deze versie is goed.
+Download de audio.py en run deze in de cmd, kopieer deze en plak hem in de Onderzoeksopdracht.py tussen de haakjes er staat daar een comment bij van welke je moet hebben.
