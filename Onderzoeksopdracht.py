@@ -21,7 +21,13 @@ while check1:
 	write("Where am I?", 0.1)
 	time.sleep(1.5)
 	clear()
+	time.sleep(0.5)
 	write("Suddenly you remember...", 0.06)
+	time.sleep(1.5)
+	write("Your name is:\n", 0.08)
+	name = input()
+	time.sleep(1)
+	write("That's right your name is " + name + "...", 0.08)
 	time.sleep(1.5)
 	clear()
 	write("You were walking back from work when you got hit on the back of your head...", 0.06)
@@ -63,12 +69,13 @@ q1 = input()
 if q1 == "1":
 	clear()
 	time.sleep(1)
-	write("As you unleash your anger in a kick movement towards the C4 explosive it flies across the room against the wall", 0.04)
+	write("As you unleash your anger in a kick movement towards the C4 explosive it flies across the room against the wall", 0.06)
 	time.sleep(3)
 	write("Nothing happend...", 0.1)
-	time.sleep(1)
+	time.sleep(2)
 	write("Alright to be honest I don't know what I was expe-", 0.04)
 	write("BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM!!!!!", 0.01)
+	time.sleep(0.5)
 	write("The explosive flings you across the room against the wall leaving you injured with heavy bleeding wounds...", 0.08)
 	time.sleep(2)
 	write("You slowly lose sight and bleed out...", 0.15)
@@ -79,6 +86,7 @@ if q1 == "1":
 		q2 = input("Restart? Yes/No\n")
 		if q2 == "Yes" or q2 == "yes":
 			check1 = True
+			loop1 = False
 			continue
 		if q2 == "No" or q2 == "no":
 			pass
