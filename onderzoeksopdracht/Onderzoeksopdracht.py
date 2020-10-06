@@ -7,7 +7,7 @@ clear()
 from pygame._sdl2 import *
 from pygame import mixer
 
-mixer.init(devicename='Luidsprekers (Realtek(R) Audio)') #run de audio.py in cmd voor uw huidige audiodevice
+mixer.init(devicename='Hoofdtelefoon (JBL LIVE400BT Stereo)') #run de audio.py in cmd voor uw huidige audiodevice
 
 def play(mp3, volume):
 	sound = mixer.Sound(mp3)
@@ -75,8 +75,9 @@ while check1:
 	time.sleep(1.5)
 	write("Lastly there's the option to try and wringle your hands out the ropes that have tied them...", 0.06)
 	time.sleep(2)
-	write("Alright calm down and think...\nWich one do I choose: 1, 2 or 3?", 0.1)
-	time.sleep(0.5)
+	write("Alright calm down and think...", 0.1)
+	time.sleep(1)
+	write("Wich one do I choose: 1, 2 or 3?", 0.1)
 	check1 = False
 q1 = input()
 if q1 == "1":
@@ -96,15 +97,15 @@ if q1 == "1":
 	write("You died...", 0.2)
 	loop1 = True
 	while loop1:
-		q2 = input("Restart? Yes/No\n")
-		if q2 == "Yes" or q2 == "yes":
+		loop1 = input("Restart? Yes/No\n")
+		if loop1 == "Yes" or q2 == "yes":
 			check1 = True
 			loop1 = False
 			continue
-		if q2 == "No" or q2 == "no":
+		if loop1 == "No" or q2 == "no":
 			pass
 		else:
-			write("That's not a valid response you potato!", 0.06)
+			write("That's not a valid response you potato!", 0.04)
 			continue
 if q1 == "2":
 	clear()
@@ -142,30 +143,51 @@ if q1 == "3":
 	time.sleep(1.5)
 	write("You have been angered by the frustration of trying to free yourself of this rope...", 0.06)
 	time.sleep(1)
-	write("As your frustration grows, so does your agression... You start flicking your arms around wich produces quite some noise...", 0.08)
+	write("As your frustration grows, so does your agression...", 0.08)
+	time.sleep(1)
+	write("You start flicking your arms around wich produces quite some noise...", 0.08)
 	time.sleep(1)
 	write("You free yourself from the rope and untie the rope around your legs and stand up to admire the room you're in...", 0.06)
 	time.sleep(1)
 	write("You walk to a set of stairs wich you spot, but as you walk there you hear people shouting some stuff in a weird language...", 0.06)
 	time.sleep(2)
+	write("Standing in the open doorway you decide to move...", 0.06)
+	time.sleep(2)
 	write("This is bad you can hear them getting closer...", 0.06)
 	time.sleep(1)
 	write("The talking stopped, but there is still someone there you just know it...", 0.06)
+	time.sleep(1.5)
+	clear()
 	time.sleep(1)
-	write("You hear the rattling of the keys...", 0.06)
 	play("keys.mp3", 0.3)
+	write("You hear the rattling of the keys...", 0.06)
 	time.sleep(1)
 	write("This is bad I need to hide...", 0.06)
 	time.sleep(0.5)
-	write("You crawl under a desk desperate for a good hiding spot and desperate that he won't spot you...", 0.06)
+	write("You crawl under a desk desperate for a good hiding spot and desperate that he won't spot you...", 0.08)
 	time.sleep(0.5)
 	play("footsteps.mp3", 0.3)
 	time.sleep(3)
 	write("As you hear him walking down the stairs you just faced your heartbeat begins to speed up...", 0.06)
 	play("heartbeat.mp3", 0.4)
-	play("gun_cocking.mp3", 0.4)
+	play("gun_cock.mp3", 0.4)
 	time.sleep(1.5)
-	write("If he finds you now its game over and you know it...", 0.06)
-
+	write("If he finds you now its game over and you know it...", 0.08)
+	time.sleep(1)
+	write("As your high heartbeat continues you don't know what to do...", 0.08)
+	time.sleep(1)
+	write("He dissapeared from your sights and you don't see anything...", 0.08)
+	play("gunshot.mp3", 0.4)
+	time.sleep(2)
+	write("Before you even can process what happend you see blood and feel a pain in your leg...", 0.08)
+	time.sleep(1)
+	write("There you are you scum!", 0.05)
+	time.sleep(0.5)
+	write("As the man who just fired his gun kicks the desk you are once again revealed to the room...", 0.08)
+	time.sleep(1)
+	play("gunshot.mp3", 0.4)
+	write("As the man points his gun at you he right after pulls the trigger...", 0.1)
+	time.sleep(1)
+	write("You died...", 0.2)
 
 
