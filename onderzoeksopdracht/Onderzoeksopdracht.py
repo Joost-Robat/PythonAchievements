@@ -24,7 +24,7 @@ def write(text, speed):
 		sleep(speed)
 	print("\n")
 clear()
-check1 = True
+check1 = False
 while check1:
 	play("1.mp3", 0.5)
 	write("You're in a land with no name...", 0.06)
@@ -213,10 +213,6 @@ if q1 == "2":
 	play("static.mp3", 0.1)
 	print("Im sorry")
 	clear()
-	play("static.mp3", 0.1)
-	print("Im sorry...")
-	time.sleep(0.6)
-	clear()
 	print("✋❍ ⬧□❒❒⍓📬📬📬")
 	time.sleep(0.2)
 	clear()
@@ -286,6 +282,24 @@ if q1 == "2":
 	time.sleep(1)
 	clear()
 	time.sleep(1)
+	write("Shocked you wipe your mind of any thoughts...", 0.08)
+	time.sleep(2)
+	write("There is nothing left for me...", 0.08)
+	time.sleep(1)
+	write("Perhaps I should just flee...", 0.08)
+	time.sleep(1)
+	write("You look at the house which is left in shambles...", 0.08)
+	time.sleep(2)
+	write("Everything is broken...", 0.08)
+	time.sleep(1)
+	write("Just like I am right now...", 0.08)
+	time.sleep(2)
+	write("I should make a choice...", 0.06)
+	time.sleep(1)
+	write("I can salvage and check for any usefull stuff left", 0.08)
+	time.sleep(1)
+	write("Or I can flee right now, because they might be looking for me...", 0.08)
+	time.sleep(
 	
 	
 if q1 == "3":
