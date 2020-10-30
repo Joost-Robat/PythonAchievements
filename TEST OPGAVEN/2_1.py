@@ -1,0 +1,6 @@
+q1 = input("Hoe oud ben jij?\n")
+print("Oke dus jij bent " + q1)
+q2 = input("Waar houd je het meest van?\n")
+print("Oke dus jij houd het meest van " + q2)
+q3 = input("Wat is je favoriete kleur?\n")
+print("Oke dus jouw favoriete kleur is " + q3)
