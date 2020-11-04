@@ -7,7 +7,7 @@ clear()
 from pygame._sdl2 import *
 from pygame import mixer
 
-mixer.init(devicename='Luidsprekers (Realtek(R) Audio)') #run de audio.py in cmd voor uw huidige audiodevice
+mixer.init(devicename='Oortelefoon van hoofdtelefoon (HyperX Virtual Surround Sound)') #run de audio.py in cmd voor uw huidige audiodevice
 
 def play(mp3, volume):
 	sound = mixer.Sound(mp3)
@@ -367,7 +367,7 @@ while q1checkpoint:
 			time.sleep(1)
 			write("You put on the hoodie from your jacket so people don't recognise you...", 0.08)
 			time.sleep(1)
-			write("As you run by a fruit market you grab a few apples and run faster...")
+			write("As you run by a fruit market you grab a few apples and run faster...", 0.08)
 			time.sleep(1)
 			write("A total of 3 isn't much...", 0.08)
 			time.sleep(1)
@@ -475,7 +475,6 @@ while q1checkpoint:
 			write("Thanks for leading me to the beginning of a happy life!", 0.06)
 			time.sleep(2)
 			break
-
 		if q3 == "1":
 			time.sleep(1)
 			clear()
@@ -547,7 +546,7 @@ while q1checkpoint:
 			time.sleep(1)
 			write("Suddenly you spot someone out of the corner of your eye...", 0.08)
 			time.sleep(0.5)
-			write("Someone you recongnise...", 0.08)
+			write("Someone you recognise...", 0.08)
 			time.sleep(0.5)
 			write("You can't really make out who that is so you focus your sight on him...", 0.08)
 			time.sleep(0.5)
@@ -818,7 +817,6 @@ while q1checkpoint:
 				time.sleep(1)
 				write("Only a few light beams managed to get in...", 0.08)
 				time.sleep(1)
-				write("")
 	if q1 == "3":
 		clear()
 		time.sleep(1.5)
