@@ -7,7 +7,7 @@ clear()
 from pygame._sdl2 import *
 from pygame import mixer
 
-mixer.init(devicename='Hoofdtelefoon (JBL LIVE400BT Stereo)') #run de audio.py in cmd voor uw huidige audiodevice
+mixer.init(devicename='Luidsprekers (Realtek(R) Audio)') #run de audio.py in cmd voor uw huidige audiodevice
 
 def play(mp3, volume):
 	sound = mixer.Sound(mp3)
@@ -45,7 +45,7 @@ def write3(text, speed):
 	print("\n")
 
 clear()
-check1 = False
+check1 = True
 while check1:
 	write3("This is a school project made by Joost Robat!", 0.08)
 	time.sleep(0.5)
@@ -128,13 +128,13 @@ while q1checkpoint:
 		write("You died...", 0.2)
 		loop1 = True
 		while loop1:
-			loop1 = input("Restart? Yes/No\n")
-			if loop1 == "Yes" or q2 == "yes":
+			loop1q = input("Restart? Yes/No\n")
+			if loop1q == "Yes" or q2 == "yes":
+				break
 				check1 = True
-				loop1 = False
 				continue
-			if loop1 == "No" or q2 == "no":
-				pass
+			if loop1q == "No" or q2 == "no":
+				break
 			else:
 				write("That's not a valid response you potato!", 0.04)
 				continue
@@ -377,7 +377,7 @@ while q1checkpoint:
 			time.sleep(1)
 			write("Forgive me lord...", 0.08)
 			time.sleep(1)
-			write("As you jog along you sot a scooter with keys...", 0.08)
+			write("As you jog along you spot a scooter with keys...", 0.08)
 			time.sleep(1)
 			write("I know it's a sin but I have to....", 0.08)
 			time.sleep(1)
@@ -395,7 +395,87 @@ while q1checkpoint:
 			time.sleep(1)
 			write("As your vehicle slows down you come to a stop...", 0.08)
 			time.sleep(1)
-			write("")
+			play("fall.mp3", 0.5)
+			time.sleep(1)
+			clear()
+			time.sleep(1)
+			play("icu.mp3", 0.1)
+			time.sleep(1)
+			write("Where am I?", 0.15)
+			time.sleep(1)
+			write("As your sight returns there is someone looking at you with a shocked face...", 0.08)
+			time.sleep(1.5)
+			write("Your hearing hasn't really returned, but you can hear a faint sound of screamming people as more people enter  the room...", 0.08)
+			time.sleep(1)
+			write2("Sir, can you hear me?", 0.08)
+			time.sleep(1)
+			write("Yeah...", 0.1)
+			time.sleep(0.5)
+			write("You mumble...", 0.08)
+			time.sleep(1)
+			write2("Can you remember anything at all?", 0.08)
+			time.sleep(1)
+			write("The realizatio hits...", 0.08)
+			time.sleep(0.5)
+			write("Your in a Intesive Care Unit...", 0.08)
+			time.sleep(1)
+			write("I can remember walking in a village...", 0.08)
+			time.sleep(0.5)
+			write("What happend?", 0.08)
+			time.sleep(1)
+			write2("You've been in a coma for a year...", 0.1)
+			time.sleep(1)
+			write("What...", 0.1)
+			time.sleep(1)
+			write("Where am I...", 0.08)
+			time.sleep(1)
+			write2("You are in Germany sir...", 0.08)
+			time.sleep(1)
+			write("What is my name...", 0.08)
+			time.sleep(1)
+			write2("...", 0.2)
+			time.sleep(0.5)
+			write2("I was hoping you could shine some light on that sir...", 0.08)
+			time.sleep(1)
+			write("so what now doctor?", 0.08)
+			time.sleep(1)
+			clear()
+			time.sleep(1)
+			write("A conversation of a lifetime occurs...", 0.08)
+			time.sleep(1)
+			clear()
+			time.sleep(1)
+			play("damage.mp3", 0.5)
+			print("One month later...")
+			time.sleep(1)
+			write("A lot has happend in one month...", 0.08)
+			time.sleep(1)
+			write("I've had a talk with the doctor, turns out I was brought here because back in my country they didn't have the equipment to heal me or sustain for that matter...", 0.08)
+			time.sleep(1.5)
+			write("They thought I was an english man because of my looks, and thought I had the money to pay for such procedures...", 0.08)
+			time.sleep(1)
+			write("I don't...", 0.2)
+			time.sleep(1)
+			write("But the judge decided that I should be able to pay it back in 10 years...", 0.08)
+			time.sleep(1)
+			write("I can talk english just fine thanks to my dad...", 0.08)
+			time.sleep(1)
+			write("Getting a job should be no problem...", 0.08)
+			time.sleep(1)
+			write("Today is the day that I'm getting out of the ICU...", 0.08)
+			time.sleep(1)
+			write("I can stay at shelter for a month before having to get my own place...", 0.08)
+			time.sleep(1)
+			write("I have hope that things are gonna turn out just fine...", 0.08)
+			time.sleep(1)
+			clear()
+			time.sleep(1)
+			print("Ending status:\nAlive, and ready to live the rest of it like a boss.")
+			time.sleep(2.5)
+			write("Thanks for leading me to the beginning of a happy life!", 0.06)
+			time.sleep(2)
+			break
+
 		if q3 == "1":
 			time.sleep(1)
 			clear()
@@ -729,6 +809,16 @@ while q1checkpoint:
 				clear()
 				time.sleep(1)
 				play("car_ride.mp3", 0.5)
+				time.sleep(2)
+				write("You wake up to a relaxing car ride...", 0.08)
+				time.sleep(1)
+				write("You've never been in a car... Or a van in that matter...", 0.08)
+				time.sleep(1)
+				write("You're in the back in the van we're it's dark...", 0.08)
+				time.sleep(1)
+				write("Only a few light beams managed to get in...", 0.08)
+				time.sleep(1)
+				write("")
 	if q1 == "3":
 		clear()
 		time.sleep(1.5)
@@ -774,7 +864,7 @@ while q1checkpoint:
 		time.sleep(2)
 		write("Before you even can process what happend you see blood and feel a pain in your leg...", 0.08)
 		time.sleep(1)
-		write("There you are you scum!", 0.05)
+		write3("There you are you scum!", 0.05)
 		time.sleep(0.5)
 		write("As the man who just fired his gun kicks the desk you are once again revealed to the room...", 0.08)
 		time.sleep(1)
